@@ -1,16 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import styled from 'styled-components'
-
-const SocialCardWrapper = styled('div')`
-  background-color: blue;
-`
+import SocialCardWrapper from './socialCards/SocialCardsWrapper'
 
 const SocialCard = props => {
-  const imgPath = `/images/logo.svg`
+  const imgPath = `images/${props.image}`
   return (
-    <SocialCardWrapper>
-      <img src={imgPath} alt="logo" />
+    <SocialCardWrapper bg={imgPath}>
+
       <div>{props.title}</div>
       <div>{props.desc}</div>
       {props.email && <div>{props.email}</div>}
@@ -33,7 +29,7 @@ SocialCard.propTypes = {
 }
 
 SocialCard.defaultProps = {
-  image: 'logo.svg/',
+  image: 'logo.svg',
   title: 'title',
   desc: 'description'
 }
