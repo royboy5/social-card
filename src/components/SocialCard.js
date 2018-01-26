@@ -7,10 +7,9 @@ const SocialCardWrapper = styled('div')`
 `
 
 const SocialCard = props => {
-  const imgPath = `/images/logo.svg`
   return (
     <SocialCardWrapper>
-      <img src={imgPath} alt="logo" />
+      <img src={`/images/${props.image}`} alt="logo" />
       <div>{props.title}</div>
       <div>{props.desc}</div>
       {props.email && <div>{props.email}</div>}
@@ -33,7 +32,7 @@ SocialCard.propTypes = {
 }
 
 SocialCard.defaultProps = {
-  image: 'logo.svg/',
+  image: 'logo.svg',
   title: 'title',
   desc: 'description'
 }
