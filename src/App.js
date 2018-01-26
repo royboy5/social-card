@@ -3,11 +3,9 @@ import SocialCard from './components/SocialCard'
 
 class App extends Component {
   render () {
-    return (
-      <React.Fragment>
-        <SocialCard email="email" />
-      </React.Fragment>
-    )
+    return <React.Fragment>
+      <SocialCard email='email'/>
+    </React.Fragment>
   }
 }
 
