@@ -1,12 +1,9 @@
 import styled from 'styled-components'
 
-const SocialCardWrapper = styled.div`
+const SocialCardWrapper = styled.article`
     height: 300px;
     min-width: 320px;
-    background-color: ${props => props.color || 'blue'};
-    ${props => props.bg && `background-image: url(${props.bg});`} 
-    background-repeat: no-repeat;
-    background-position: center;
+    background-color: ${props => props.color || '#fff'};
 `
 
 export default SocialCardWrapper
