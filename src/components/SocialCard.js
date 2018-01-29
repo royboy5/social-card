@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import SocialCardWrapper from './socialCards/SocialCardsWrapper'
+import SocialCardWrapper from './socialCard/SocialCardsWrapper'
 
 const SocialCard = props => {
   const imgPath = `images/${props.image}`
@@ -9,10 +9,7 @@ const SocialCard = props => {
 
       <div>{props.title}</div>
       <div>{props.desc}</div>
-      {props.email && <div>{props.email}</div>}
-      {props.fb && <div>{props.fb}</div>}
-      {props.ig && <div>{props.ig}</div>}
-      {props.tw && <div>{props.tw}</div>}
+      <div>{props.email}</div>
 
     </SocialCardWrapper>
   )
@@ -23,9 +20,7 @@ SocialCard.propTypes = {
   title: PropTypes.string,
   desc: PropTypes.string,
   email: PropTypes.string.isRequired,
-  fb: PropTypes.string,
-  ig: PropTypes.string,
-  tw: PropTypes.string
+  social: PropTypes.object
 }
 
 SocialCard.defaultProps = {
