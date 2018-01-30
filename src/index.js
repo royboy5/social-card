@@ -14,7 +14,7 @@ const User = {
   contact: {
     phone: '555-555-5555',
     fax: '555-555-5556',
-    mobile: '555=555=5557'
+    mobile: '555-555-5557'
   },
   address: {
     add1: '888 Fat st',
