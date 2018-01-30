@@ -40,9 +40,9 @@ const User = {
 }
 
 const App = () => (
-  <React.Fragment>
+  <main>
     <SocialCard user={User} />
-  </React.Fragment>
+  </main>
 )
 
 ReactDOM.render(<App />, document.getElementById('root'))
